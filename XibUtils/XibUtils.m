@@ -74,14 +74,7 @@
     
 }
 
-+ (void)adjustButtonHorizontal:(UIButton *)button edge:(CGFloat)edge
-{
-        button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        CGSize size = [button.titleLabel.text sizeForFont:button.titleLabel.font size:CGSizeMake(MAXFLOAT, button.frame.size.height) mode:NSLineBreakByCharWrapping];
-        CGFloat labelLeft = (button.frame.size.width - size.width - edge - button.imageView.frame.size.width) / 2;
-        button.titleEdgeInsets = UIEdgeInsetsMake(0, labelLeft - button.imageView.frame.size.width, 0, - (labelLeft - button.imageView.frame.size.width));
-        button.imageEdgeInsets = UIEdgeInsetsMake(0, labelLeft + size.width + edge, 0, -(labelLeft + size.width + edge));
-}
+
 
 
 @end
