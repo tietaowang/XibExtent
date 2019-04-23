@@ -33,31 +33,6 @@
     return nil;
 }
 
-// 处理网络状态改变
-+ (void) networkStateChange
-{
-    
-//    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
-//    // 2.设置网络状态改变后的处理
-//    [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//            // 当网络状态改变了, 就会调用这个block
-//            switch (status) {
-//                case AFNetworkReachabilityStatusUnknown: // 未知网络
-//                    break;
-//                case AFNetworkReachabilityStatusNotReachable: // 没有网络(断网)
-//                    break;
-//                case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
-//                    KPostNotification(@"resetNetwork");
-//                    break;
-//                case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
-//                    KPostNotification(@"resetNetwork");
-//                    break;
-//            }
-//        
-//    }];
-    
-}
-
 
 // 字典转json字符串方法
 

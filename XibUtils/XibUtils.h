@@ -14,8 +14,6 @@
 
 
 
-// 处理网络状态改变
-+ (void)networkStateChange;
 +(NSString *)convertToJsonData:(NSDictionary *)dict;
 + (void)adjustButtonHorizontal:(UIButton *)button edge:(CGFloat)edge;
 @end
